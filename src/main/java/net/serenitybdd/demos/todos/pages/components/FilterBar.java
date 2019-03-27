@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FilterBar {
-    public static final Target CLEAR_COMPLETED = Target.the("Clear completed button").locatedBy("#clear-completed");
+    public static final Target CLEAR_COMPLETED = Target.the("Clear completed button").locatedBy(".clear-completed");
 
     public static Target filterCalled(String name) {
         String FILTER_BUTTON = "//a[.='%s']";
